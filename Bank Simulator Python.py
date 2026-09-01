@@ -231,4 +231,7 @@ class ATM(tk.Tk):
 # ================= RUN =================
 
 if __name__ == "__main__":
-    ATM().mainloop()
+    try:
+        ATM().mainloop()
+    except Exception as e:
+        print(f"Error: {e}")
